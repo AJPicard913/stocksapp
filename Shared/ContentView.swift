@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Header()
+                .offset(y: 55)
+            TopCard()
+                .offset(y: 60)
+            Portfolio()
+                .offset(y: 70)
+            BottomCard()
+                .offset(y: 90)
+            Taskbar()
+                .offset(y: -15)
+        }
     }
 }
 
